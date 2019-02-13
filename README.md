@@ -42,13 +42,13 @@ After you have installed the `anam/captcha`, open the `config/app.php` file whic
 In the `$providers` array add the following service provider.
 
 ```php
-'Anam\Captcha\ServiceProvider\CaptchaServiceProvider'
+Anam\Captcha\ServiceProvider\CaptchaServiceProvider::class
 ```
 
 Add the facade of this package to the `$aliases` array.
 
 ```php
-'Captcha' => 'Anam\Captcha\Facade\Captcha'
+'Captcha' => Anam\Captcha\Facade\Captcha::class
 ```
 
 You can now use this facade in place of instantiating the converter yourself in the following examples.
